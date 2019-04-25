@@ -2,7 +2,7 @@
   <ul>
     {% for item in site.data.navigation %}
     <li class="tag-h1 {% if page.url == item.link %}active{% endif %}">
-      <a href="{{ item.link }}">{{ item.name }}</a>
+      <a href="{{ item.link | relative_url }}">{{ item.name }}</a>
     </li>
     {% endfor %}
   </ul>
